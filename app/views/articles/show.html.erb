@@ -1,4 +1,7 @@
 <h1><%= @article.title %></h1><br>
+<p><% if @article.image.exists? %>
+      <%= image_tag @article.image.url %><br/>
+  	<% end %></p><br>
 <p><%= @article.body %></p><br><br>
 <p>
   Tags:
